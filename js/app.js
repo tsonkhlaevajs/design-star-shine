@@ -14432,13 +14432,13 @@
             }));
         }));
         const textareaReview = document.querySelector(".textarea-review");
-        textareaReview.addEventListener("keyup", (e => {
+        if (textareaReview) textareaReview.addEventListener("keyup", (e => {
             textareaReview.style.height = "63px";
             let scHeight = e.target.scrollHeight;
             textareaReview.style.height = `${scHeight}px`;
         }));
         const textareaQa = document.querySelector(".textarea-qa");
-        textareaQa.addEventListener("keyup", (e => {
+        if (textareaQa) textareaQa.addEventListener("keyup", (e => {
             textareaQa.style.height = "63px";
             let scHeight = e.target.scrollHeight;
             textareaQa.style.height = `${scHeight}px`;
